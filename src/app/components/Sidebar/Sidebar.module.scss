@@ -1,0 +1,38 @@
+.sidebar {
+  width: 256px;
+  padding: 20px 0;
+  background-color: #ffffff;
+  margin: 144px 0 0 80px;
+  border-radius: 8px;
+}
+
+.category {
+  margin-bottom: 25px;
+
+  .title {
+    color: #a0a0a0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+
+  &.selected {
+    background-color: #e0f7fa;
+    margin-left: 20px;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+}
