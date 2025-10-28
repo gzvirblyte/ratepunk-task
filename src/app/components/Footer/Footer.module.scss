@@ -13,7 +13,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
 
@@ -69,20 +69,22 @@
 }
 
 .bottomBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
   margin-bottom: 24px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-// @media (min-width: 768px) {
-//   .bottomBar {
-//     flex-direction: row;
-//     align-items: center;
-//   }
-// }
+@media (min-width: 768px) {
+  .bottomBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+}
 
 .copyright {
   font-size: 12px;
@@ -111,11 +113,20 @@
   text-decoration: none;
 }
 
-.legalLink:last-child {
-  margin-left: 16px;
+@media (min-width: 768px) {
+  .legalLink:last-child {
+    margin-left: 16px;
+  }
 }
 
 .legalLink:hover {
   color: white;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .legalLinks {
+    display: flex;
+    flex-direction: column;
+  }
 }

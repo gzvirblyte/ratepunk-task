@@ -68,11 +68,11 @@
 
 .emailInput:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: #05bafc;
 }
 
 .submitButton {
-  background-color: #3b82f6;
+  background-color: #05bafc;
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
@@ -80,10 +80,6 @@
   border: none;
   cursor: pointer;
   white-space: nowrap;
-}
-
-.submitButton:hover {
-  background-color: #2563eb;
 }
 
 .inputError {

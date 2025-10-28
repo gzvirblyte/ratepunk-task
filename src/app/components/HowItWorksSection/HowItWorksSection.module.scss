@@ -12,11 +12,11 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-  justify-items: center;
 }
 
 @media (min-width: 768px) {
   .cardGrid {
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 }

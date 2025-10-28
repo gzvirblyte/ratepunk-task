@@ -78,7 +78,7 @@ const Footer = () => (
         <span className={styles.copyright}>
           © 2025 Ratepunk. All Rights Reserved.
         </span>
-        <div>
+        <div className={styles.legalLinks}>
           <Link href="#" className={styles.legalLink}>
             Privacy Policy
           </Link>
