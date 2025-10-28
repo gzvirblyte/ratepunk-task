@@ -1,0 +1,13 @@
+.pageContainer {
+  margin: 0 80px;
+}
+
+.mainContainer {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+.contentArea {
+  flex-grow: 1;
+  padding: 0 64px;
+}

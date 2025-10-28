@@ -1,0 +1,22 @@
+.howItWorksSection {
+  margin-bottom: 32px;
+}
+
+.sectionHeading {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .cardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

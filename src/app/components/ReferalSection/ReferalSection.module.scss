@@ -1,0 +1,131 @@
+.referalSection {
+  background-color: white;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.description {
+  max-width: 608px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.formContainer {
+  display: flex;
+  width: 100%;
+  max-width: 448px;
+  margin-bottom: 10px;
+}
+
+.inputGroup {
+  flex-grow: 1;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.inputLabel {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  font-size: 12px;
+  color: #6b7280;
+  pointer-events: none;
+  padding: 0 4px;
+  z-index: 1;
+}
+
+.emailInput {
+  flex-grow: 1;
+  padding: 20px 12px 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.emailInput::placeholder {
+  color: #9ca3af;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.submitButton {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.submitButton:hover {
+  background-color: #2563eb;
+}
+
+.inputError {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 1px #ef4444;
+}
+
+.feedbackMessage {
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+  width: 100%;
+  max-width: 448px;
+  padding-left: 5px;
+}
+
+.errorMessage {
+  color: #ef4444;
+}
+
+.successMessage {
+  color: #22c55e;
+}
+
+@media (max-width: 600px) {
+  .formContainer {
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .emailInput,
+  .submitButton {
+    width: 100%;
+  }
+
+  .feedbackMessage {
+    text-align: center;
+    max-width: 300px;
+  }
+}

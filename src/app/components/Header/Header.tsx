@@ -1,8 +1,7 @@
 import Image from "next/image";
 
+import { routes } from "@/app/lib/placeholder-data";
 import styles from "./Header.module.scss";
-
-const routes = ["Hotels", "Extensions", "Press", "Blogs"];
 
 const Header = () => {
   return (
@@ -15,7 +14,9 @@ const Header = () => {
         className={styles.logo}
       />
       {routes.map((route) => (
-        <div className={styles.route}>{route}</div>
+        <div className={styles.route} key={route}>
+          {route}
+        </div>
       ))}
     </header>
   );
